@@ -1,0 +1,32 @@
+@import 'variables.less';
+@import 'mixins.less';
+@import 'reset.less';
+
+@import url('https://fonts.googleapis.com/css?family=KoHo&display=swap" rel="stylesheet');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  body {
+    .flex(none, center, column);
+    background-color: @primary-colour;
+    font-family: 'KoHo', sans-serif;
+  }
+
+  .container {
+    margin: 0 auto; 
+    width: 100%;
+    background-color: @white;
+    @media(min-width: 1025px){
+      width: 80%;
+  }
+
+  }
+
+  @import '../components/Header/header.less' ;
