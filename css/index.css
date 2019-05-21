@@ -165,21 +165,38 @@ header {
   flex-direction: column;
   color: #1e242e;
 }
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
 header h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 header .nav-menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 1rem;
   padding: 0;
 }
+@media (min-width: 600px) {
+  header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 header .nav-menu a {
+  font-size: 1rem;
   text-decoration: none;
   padding: 0.5rem;
   color: #1e242e;
