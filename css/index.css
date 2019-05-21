@@ -164,6 +164,7 @@ header {
   align-items: center;
   flex-direction: column;
   color: #1e242e;
+  padding: 2rem 0;
 }
 @media (min-width: 600px) {
   header {
@@ -200,4 +201,50 @@ header .nav-menu a {
   text-decoration: none;
   padding: 0.5rem;
   color: #1e242e;
+}
+.banner {
+  background-image: url('../../assets/adventure.jpg');
+  position: absolute;
+  width: inherit;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+}
+.banner .hero {
+  height: 50%;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1e242e;
+}
+.banner .hero .title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+@media (min-width: 600px) {
+  .banner .hero .title {
+    font-size: 3rem;
+  }
+}
+.banner .hero .sub {
+  font-size: 0.7rem;
+  margin: 0.8rem 0;
+}
+@media (min-width: 600px) {
+  .banner .hero .sub {
+    font-size: 1rem;
+  }
+}
+.banner .hero button {
+  padding: 0.7rem;
+  color: #fff;
+  background-color: #2a7be3;
+  font-size: 1rem;
+  border: none;
+  margin: 1rem;
+  border-radius: 0.3rem;
 }
