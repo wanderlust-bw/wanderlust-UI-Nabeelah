@@ -1,0 +1,43 @@
+.banner {
+    background-image: url('../../assets/adventure.jpg');
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+
+    .hero {
+        height: 50%;
+        width: 50%;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: @primary-colour;
+        .title{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            @media(min-width: 600px){
+                font-size: 3rem;
+            }
+        }
+        .sub {
+            font-size: 0.7rem;
+            margin: 0.8rem 0;
+            @media(min-width: 600px){
+                font-size: 1rem;
+            }
+        }
+        
+        button {
+            padding: 0.7rem;
+            color: @white;
+            background-color: @blue;
+            font-size: 1rem;
+            border: none;
+            margin: 1rem;
+            border-radius: 0.3rem;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+header {
+    .flex(space-between, center, column);
+    color: @primary-colour;
+    @media(min-width: 600px){
+        .flex(space-between, baseline, row);
+    }
+    padding: 2rem 0;
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+
+    }
+
+    .nav-menu {
+        .flex(space-evenly, center, column);
+        margin: 0 1rem;
+        padding: 0;
+        @media(min-width: 600px){
+            .flex(space-between, center, row);
+        }
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 0.5rem;
+            color: @primary-colour;
+        }
+    }
+
+}
