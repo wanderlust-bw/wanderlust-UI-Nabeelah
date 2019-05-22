@@ -30,3 +30,54 @@ header {
     }
 
 }
+.search-bar {
+    width: 100%;
+    background-color: @search-blue;
+    height: 12rem;
+    .flex(center, center, column);
+    @media(min-width: 600px){
+        height: 70px;
+        .flex(center, center, row);
+        display: none;
+    }
+    .bar {
+        .flex(center, center, column);
+        width:100%;
+        @media(min-width: 600px){
+            .flex(center, center, row);
+        }
+    }
+    display: none;
+    input {
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        border: none;
+        margin: 0.5rem;
+        @media(min-width: 600px) {
+            margin: 0.3rem 0;
+            width: 20rem;
+        }
+    }
+    button {
+        background-color: @green;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        border: none;
+        font-size: 1rem;
+        color: @white; 
+        @media(min-width: 600px) {
+            margin-left: 2rem;
+            width: 6rem;
+        }
+    }
+
+    .close {
+        color: @white;
+        font-size: 1rem;
+        margin: 1rem 0;
+        @media(min-width: 600px) {
+            margin: 0 1.5rem;
+        }
+    }
+}
