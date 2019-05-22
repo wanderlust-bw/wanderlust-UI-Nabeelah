@@ -5,6 +5,7 @@ class Search {
         this.element.addEventListener('click', ()=> this.toggle());
     }
     toggle() {
+        TweenMax.from('.search-bar', 2, { opacity: 0 })
         this.navbar.classList.add('show');
     }
 }
@@ -22,7 +23,6 @@ class Close {
     }
 
     closebtn() {
-        console.log('here');
         this.navbar.classList.remove('show')
     }
 }
