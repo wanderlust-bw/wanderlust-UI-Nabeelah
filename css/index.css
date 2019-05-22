@@ -202,6 +202,9 @@ header .nav-menu a {
   padding: 0.8rem;
   color: #1e242e;
 }
+header .nav-menu a:hover {
+  color: #2a7be3;
+}
 .search-bar {
   width: 100%;
   background-color: #092244;
@@ -227,6 +230,7 @@ header .nav-menu a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0.3rem 0;
   width: 100%;
 }
 @media (min-width: 600px) {
@@ -242,7 +246,7 @@ header .nav-menu a {
   padding: 1rem;
   border-radius: 0.2rem;
   border: none;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 @media (min-width: 600px) {
   .search-bar input {
@@ -269,10 +273,17 @@ header .nav-menu a {
   font-size: 1rem;
   margin: 1rem 0;
 }
+.search-bar .close:hover {
+  color: #2a7be3;
+  cursor: pointer;
+}
 @media (min-width: 600px) {
   .search-bar .close {
     margin: 0 1.5rem;
   }
+}
+.search-bar.show {
+  display: block;
 }
 .banner {
   background-image: url('../../assets/adventure.jpg');
