@@ -10,6 +10,7 @@
 </head>
 
 <body>
+        <script defer="defer" src="./components/Header/header.js"></script>
     <div class="container">
         <!-- Nav bar -->
         <header>
@@ -17,21 +18,27 @@
                 <h1>Wanderlust</h1>
             </div>
             <nav class="nav-menu">
-                <a href='index.html'>How it works</a>
                 <a href="#">Become a guide</a>
-                <a href="#">Login</a>
-                <a href="#">Sign Up</a>
                 <a href="#">Search</a>
+                <a href="#">Login</a>
+                <a href="#">Join</a>
             </nav>
         </header>
+        <section class="search-bar">
+            <div class="bar" >
+                <input type="text" placeholder="Type here to search">
+                <button>Search</button>
+                <span class="close">x Close</span>
+            </div>
+        </section>
         <!-- Banner -->
-        <div class="banner">
+        <section class="banner">
             <div class="hero">
                 <h1 class="title">Find your next adventure</h1>
                 <p class="sub">Local experiences by local guides</p>
                 <button>Let's start!</button>
             </div>
-        </div>
+        </section>
         <!-- How it works -->
         <section class="guide">
             <div>
@@ -72,7 +79,7 @@
                     <div class="card-image">
                         <img src="/assets/explore.jpg" alt="Bridge">
                     </div>
-                    <div class="card-desc">Lorem ipsum dolor sit, amet </div>
+                    <div class="card-desc">Take a hike on a bridge to view the world from above</div>
                     <button>View Details</button>
                 </div>
 
@@ -83,8 +90,7 @@
                     <div class="card-image">
                         <img src="/assets/horse.jpg" alt="Horseback Riding">
                     </div>
-                    <div class="card-desc">Lorem ipsum dolor sit, amet consectetur 
-                    </div>
+                    <div class="card-desc">Why trek? Explore the beautiful landscape while horseback riding.</div>
                     <button>View Details</button>
                 </div>
 
@@ -95,8 +101,7 @@
                     <div class="card-image">
                         <img src="/assets/food.jpg" alt="Food">
                     </div>
-                    <div class="card-desc">Lorem ipsum dolor sit, amet consectetur 
-                    </div>
+                    <div class="card-desc">Give your tastebuds a treat. Discover the various cuisines Italy has to offer.</div>
                     <button>View Details</button>
                 </div>
 
@@ -107,12 +112,139 @@
                     <div class="card-image">
                         <img src="/assets/sky-diving.jpg" alt="Sky Diving">
                     </div>
-                    <div class="card-desc">Lorem ipsum dolor sit, amet consectetur  
-                    </div>
+                    <div class="card-desc">Pump up your andrenalin. Cross an item off your bucketlist and go skydiving!</div>
                     <button>View Details</button>
                 </div>
             </div>
         </section>
+        <!-- Become a guide -->
+        <section class="tour-guide">
+            <div class="tour-register">
+                <h1>Become a guide</h1>
+                <p>Share your passion, make money, build a portfolio</p>
+                <button>Begin</button>
+            </div>
+        </section>
+        <!-- Search for Experience -->
+        <section class="search">
+            <div class="search-header">
+                <h1>Search by Activity</h1>
+            </div>
+            <div class="search-category">
+                <div class="search-title">
+                    <h1>City Tours</h1>
+                </div>
+                <div class="search-cards">
+                    <div class="search-card">
+                        <img src="/assets/bus.jpg" alt="">
+                        <div>
+                            <p>London Bus Tour</p>
+                        </div>
+                    </div>
+                    <div class="search-card">
+                        <img src="/assets/park.jpg" alt="">
+                        <div>
+                            <p>Central Park Photoshoot</p>
+                        </div>
+                    </div>
+                    <div class="search-card">
+                        <img src="/assets/gallery.jpg" alt="">
+                        <div>
+                            <p>Art Gallery Hopping in Paris</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-category">
+                <div class="search-title">
+                    <h1>Outdoor Adventures</h1>
+                </div>
+                <div class="search-cards">
+                    <div class="search-card">
+                        <img src="/assets/sky-diving.jpg" alt="">
+                        <div>
+                            <p>Sky Dive Lesson</p>
+                        </div>
+                    </div>
+                    <div class="search-card">
+                        <img src="/assets/pilot.jpg" alt="">
+                        <div>
+                            <p>Learn to Fly over Sao Paulo</p>
+                        </div>
+                    </div>
+                    <div class="search-card">
+                        <img src="/assets/star.jpg" alt="">
+                        <div>
+                            <p>Star Gazing at the Grand Canyon</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="search-category">
+                <div class="search-title">
+                    <h1>Food & Drink</h1>
+                </div>
+                <div class="search-cards">
+                    <div class="search-card">
+                        <img src="/assets/taste.jpg" alt="">
+                        <div>
+                            <p>A Taste of Italy</p>
+                        </div>
+                    </div>
+                    <div class="search-card">
+                        <img src="/assets/food.jpg" alt="">
+                        <div>
+                            <p>Learn the Art of Dumpling Making</p>
+                        </div>
+                    </div>
+                    <div class="search-card">
+                        <img src="/assets/cook.jpg" alt="">
+                        <div>
+                            <p>Cooking Classes in Ancient Cuisine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location">
+                <div class="search-header">
+                    <h1>Search by Location</h1>
+                </div>
+                <div class="search-category">
+                    <div class="search-cards">
+                        <div class="search-card">
+                            <img src="/assets/bus.jpg" alt="">
+                            <div>
+                                <p>London</p>
+                            </div>
+                        </div>
+                        <div class="search-card">
+                            <img src="/assets/bali.jpg" alt="">
+                            <div>
+                                <p>Bali</p>
+                            </div>
+                        </div>
+                        <div class="search-card">
+                            <img src="/assets/safari.jpg" alt="">
+                            <div>
+                                <p>Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+                <div class="footer-content">
+                    <h1>Join Today</h1>
+                    <div>
+                        <p>Create an account, find your adventure and have the experience of a lifetime</p>
+                    </div>
+                    <button>Join now</button>
+                </div>
+            </footer>
     </div>
 </body>
 

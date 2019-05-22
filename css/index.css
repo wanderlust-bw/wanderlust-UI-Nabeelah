@@ -127,10 +127,10 @@ table {
   border-spacing: 0;
 }
 @font-face {
-  font-family: 'KoHo';
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('KoHo Regular'), local('KoHo-Regular'), url(https://fonts.gstatic.com/s/koho/v2/K2F-fZ5fmddNNi4UeA.ttf) format('truetype');
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v13/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
@@ -146,7 +146,7 @@ body {
   justify-content: none;
   align-items: center;
   background-color: #1e242e;
-  font-family: 'KoHo', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .container {
   margin: 0 auto;
@@ -155,7 +155,7 @@ body {
 }
 @media (min-width: 1025px) {
   .container {
-    width: 80%;
+    width: 84%;
   }
 }
 header {
@@ -176,7 +176,7 @@ header {
 }
 header h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   padding: 1rem 2rem;
 }
@@ -197,10 +197,93 @@ header .nav-menu {
   }
 }
 header .nav-menu a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.8rem;
   color: #1e242e;
+}
+header .nav-menu a:hover {
+  color: #2a7be3;
+}
+.search-bar {
+  width: 100%;
+  background-color: #092244;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+@media (min-width: 600px) {
+  .search-bar {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+}
+.search-bar .bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .search-bar .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.search-bar input {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  margin: 1rem;
+}
+@media (min-width: 600px) {
+  .search-bar input {
+    margin: 0.3rem 0;
+    width: 20rem;
+  }
+}
+.search-bar button {
+  background-color: #22CE8B;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+}
+@media (min-width: 600px) {
+  .search-bar button {
+    margin-left: 2rem;
+    width: 6rem;
+  }
+}
+.search-bar .close {
+  color: #fff;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.search-bar .close:hover {
+  color: #2a7be3;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .search-bar .close {
+    margin: 0 1.5rem;
+  }
+}
+.search-bar.show {
+  display: block;
 }
 .banner {
   background-image: url('../../assets/adventure.jpg');
@@ -211,7 +294,7 @@ header .nav-menu a {
 }
 .banner .hero {
   height: 50%;
-  width: 50%;
+  width: 100%;
   padding: 1rem;
   text-align: center;
   position: relative;
@@ -235,7 +318,7 @@ header .nav-menu a {
 }
 @media (min-width: 600px) {
   .banner .hero .sub {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 .banner .hero button {
@@ -280,9 +363,9 @@ header .nav-menu a {
 .guide .steps .step .no {
   border: 0.2rem #e97979 solid;
   border-radius: 50%;
-  width: 1.5rem;
+  width: 2.5rem;
   margin: 0 auto;
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-weight: bold;
 }
 .guide .steps .step h4 {
@@ -331,8 +414,8 @@ header .nav-menu a {
 .experience .card {
   position: relative;
   width: 100%;
-  height: 360px;
-  padding: 1rem 1rem 3rem 1rem;
+  height: 390px;
+  padding: 1rem;
   border: 0.09rem #2a7be3 solid;
   margin: 1rem 1rem;
   border-radius: 5%;
@@ -351,6 +434,7 @@ header .nav-menu a {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
+  color: #e97979;
 }
 .experience .card .card-image img {
   width: 100%;
@@ -358,7 +442,8 @@ header .nav-menu a {
   max-height: 200px;
 }
 .experience .card .card-desc {
-  text-align: justify;
+  text-align: left;
+  line-height: 1.5rem;
 }
 .experience .card button {
   position: absolute;
@@ -369,4 +454,169 @@ header .nav-menu a {
   padding: 1rem;
   margin: 0.5rem;
   right: 0.5rem;
+}
+.tour-guide {
+  background-image: url('../../assets/unsplash.jpg');
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (min-width: 600px) {
+  .tour-guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.tour-guide .tour-register {
+  padding: 2rem;
+  color: #fff;
+}
+.tour-guide .tour-register h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: left;
+  margin: 1rem 0;
+  text-shadow: #000 1px 0 7px;
+}
+@media (min-width: 600px) {
+  .tour-guide .tour-register h1 {
+    font-size: 3rem;
+  }
+}
+.tour-guide .tour-register p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-shadow: #000 1px 0 5px;
+}
+@media (min-width: 600px) {
+  .tour-guide .tour-register p {
+    font-size: 1.5rem;
+  }
+}
+.tour-guide .tour-register button {
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #e97979;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+}
+.search {
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.search .search-header {
+  padding: 0.5rem;
+}
+.search .search-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: #1e242e;
+}
+.search .search-category .search-title {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  color: #2a7be3;
+}
+.search .search-category .search-title h1 {
+  font-size: 1.5rem;
+}
+.search .search-category .search-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  .search .search-category .search-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.search .search-category .search-cards .search-card {
+  position: relative;
+  margin-bottom: 1rem;
+}
+@media (min-width: 600px) {
+  .search .search-category .search-cards .search-card {
+    width: 30%;
+  }
+}
+.search .search-category .search-cards .search-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.3rem;
+}
+.search .search-category .search-cards .search-card div {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 1rem;
+  color: #1e242e;
+  bottom: 0.1rem;
+}
+.search .search-category .search-cards .search-card div p {
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.search .location {
+  padding: 2rem 0;
+}
+.search .location .search-header h1 {
+  margin: 2rem 0;
+}
+.footer {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background-color: #1e242e;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .footer-content {
+  padding: 2rem;
+}
+.footer .footer-content h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  .footer .footer-content h1 {
+    font-size: 3rem;
+  }
+}
+.footer .footer-content p {
+  text-align: left;
+  line-height: 1.5rem;
+}
+@media (min-width: 600px) {
+  .footer .footer-content p {
+    font-size: 1.2rem;
+  }
+}
+.footer .footer-content button {
+  padding: 1.2rem;
+  margin: 1rem 0;
+  background-color: #2a7be3;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
 }

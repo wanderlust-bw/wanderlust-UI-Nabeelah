@@ -2,7 +2,7 @@
 @import 'mixins.less';
 @import 'reset.less';
 
-@import url('https://fonts.googleapis.com/css?family=KoHo&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet');
 
 * {
     box-sizing: border-box;
@@ -16,7 +16,7 @@
   body {
     .flex(none, center, column);
     background-color: @primary-colour;
-    font-family: 'KoHo', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
   .container {
@@ -24,7 +24,7 @@
     width: inherit;
     background-color: @white;
     @media(min-width: 1025px){
-      width: 80%;
+      width: 84%;
   }
 
   }
@@ -33,3 +33,6 @@
   @import '../components/Banner/banner.less';
   @import '../components/Guide/guide.less';
   @import '../components/Experience/experience.less';
+  @import '../components/Tour-register/tour.less';
+  @import '../components/Search-Experience/search.less';
+  @import '../components/Footer/footer.less';

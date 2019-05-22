@@ -1,0 +1,38 @@
+.footer {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background-color: @primary-colour;
+    color: @white;
+    .flex(flex-start, center, row);
+
+    .footer-content {
+        padding: 2rem;
+
+        h1 {
+            font-size: 2rem;
+            margin: 1rem 0;
+            font-weight: bold;
+            @media(min-width: 600px) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            text-align: left;
+            line-height: 1.5rem;
+            @media(min-width: 600px) {
+                font-size: 1.2rem;
+            }
+        }
+
+        button {
+            padding: 1.2rem;
+            margin: 1rem 0;
+            background-color: @blue;
+            color: @white;
+            border: none;
+            border-radius: 0.5rem;
+        }
+    }
+}
