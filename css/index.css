@@ -126,6 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'KoHo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('KoHo Regular'), local('KoHo-Regular'), url(https://fonts.gstatic.com/s/koho/v2/K2F-fZ5fmddNNi4UeA.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -428,7 +434,10 @@ header .nav-menu a {
   padding: 0.5rem;
 }
 .search .search-header h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: #1e242e;
 }
 .search .search-category .search-title {
   margin: 0.5rem 0;
@@ -463,7 +472,7 @@ header .nav-menu a {
 }
 .search .search-category .search-cards .search-card img {
   width: 100%;
-  height: 200px;
+  height: 260px;
   border-radius: 0.3rem;
 }
 .search .search-category .search-cards .search-card div {
@@ -473,10 +482,16 @@ header .nav-menu a {
   text-align: center;
   font-size: 1rem;
   color: #1e242e;
-  bottom: 0.2rem;
+  bottom: 0.1rem;
 }
 .search .search-category .search-cards .search-card div p {
   text-align: center;
   padding: 0.5rem;
   font-weight: bold;
+}
+.search .location {
+  padding: 2rem 0;
+}
+.search .location .search-header h1 {
+  margin: 2rem 0;
 }
