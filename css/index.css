@@ -419,3 +419,64 @@ header .nav-menu a {
   border: none;
   border-radius: 0.2rem;
 }
+.search {
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.search .search-header {
+  padding: 0.5rem;
+}
+.search .search-header h1 {
+  font-size: 1.5rem;
+}
+.search .search-category .search-title {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  color: #2a7be3;
+}
+.search .search-category .search-title h1 {
+  font-size: 1.5rem;
+}
+.search .search-category .search-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  .search .search-category .search-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.search .search-category .search-cards .search-card {
+  position: relative;
+  margin-bottom: 1rem;
+}
+@media (min-width: 600px) {
+  .search .search-category .search-cards .search-card {
+    width: 30%;
+  }
+}
+.search .search-category .search-cards .search-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.3rem;
+}
+.search .search-category .search-cards .search-card div {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 1rem;
+  color: #1e242e;
+  bottom: 0.2rem;
+}
+.search .search-category .search-cards .search-card div p {
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
