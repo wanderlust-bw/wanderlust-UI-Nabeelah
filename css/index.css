@@ -151,7 +151,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: inherit;
+  width: 100%;
   background-color: #fff;
 }
 @media (min-width: 1025px) {
@@ -209,6 +209,7 @@ header .nav-menu.show {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
   }
 }
 header .nav-menu a {
@@ -641,10 +642,15 @@ header .nav-menu a:hover {
 }
 .team-desc h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   word-spacing: 0.5rem;
   color: #1e242e;
+}
+@media (min-width: 600px) {
+  .team-desc h1 {
+    font-size: 2rem;
+  }
 }
 .team-members {
   display: flex;

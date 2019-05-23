@@ -1,3 +1,18 @@
+class ToggleMenu {
+    constructor(link) {
+        this.link = link;
+        this.navbar = document.querySelector('.nav-menu');
+        this.link.addEventListener('click', () => this.toggle())
+    }
+
+    toggle() {
+        this.navbar.classList.toggle('show');
+    }
+}
+
+let mobileNav = document.querySelector('.mobile-nav');
+new ToggleMenu(mobileNav);
+
 class Team {
     constructor(items) {
         this.items = items;
