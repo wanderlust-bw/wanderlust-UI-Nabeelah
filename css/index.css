@@ -191,6 +191,9 @@ header .mobile-nav {
     display: none;
   }
 }
+header .mobile-nav:hover {
+  color: #2a7be3;
+}
 header .nav-menu {
   display: none;
 }
