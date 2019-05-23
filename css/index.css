@@ -621,3 +621,63 @@ header .nav-menu a:hover {
   border: none;
   border-radius: 0.5rem;
 }
+.team-desc {
+  padding: 1rem 0;
+  margin: 2rem 0;
+}
+.team-desc h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  word-spacing: 0.5rem;
+  color: #1e242e;
+}
+.team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.team-members .team-card {
+  cursor: pointer;
+  perspective: 600px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: 2rem;
+}
+.team-members .team-card .content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+.team-members .team-card .content:hover {
+  transform: rotateY(180deg);
+}
+.team-members .team-card .content .img-side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.team-members .team-card .content .img-side img {
+  width: 100%;
+}
+.team-members .team-card .content .back {
+  backface-visibility: hidden;
+  background-color: #e97979;
+  color: #fff;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  margin: auto 0;
+  transform: rotateY(180deg);
+  padding: 1em;
+  display: table-cell;
+  vertical-align: middle;
+}

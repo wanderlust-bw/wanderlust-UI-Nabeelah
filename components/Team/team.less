@@ -1,0 +1,62 @@
+.team-desc {
+    padding: 1rem 0;
+    margin: 2rem 0;
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        word-spacing: 0.5rem;
+        color: @primary-colour;
+    }
+}
+
+.team-members {
+    .flex(center, center, row);
+    width: 100%;
+    
+    .team-card {
+        cursor: pointer;
+        perspective: 600px;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        margin: 2rem;
+        
+        .content {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: all 1s ease-in-out;
+            transform-style: preserve-3d; 
+            &:hover {
+                transform: rotateY(180deg);
+            } 
+              
+            .img-side {
+                backface-visibility: hidden;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .back {
+                backface-visibility: hidden;
+                background-color: @coral;
+                color: @white;
+                border-radius: 50%;
+                height: 200px;
+                width: 200px;
+                text-align: center;
+                margin: auto 0;
+                transform: rotateY(180deg);
+                padding: 1em;
+                display: table-cell;
+                vertical-align: middle;                  
+            }
+        }
+    }
+}
