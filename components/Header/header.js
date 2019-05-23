@@ -18,14 +18,30 @@ new Search(search);
 class Close {
     constructor(element) {
         this.element = element;
-        this.navbar = document.querySelector('.search-bar');
+        this.searchbar = document.querySelector('.search-bar');
         this.element.addEventListener('click', () => this.closebtn())
     }
 
     closebtn() {
-        this.navbar.classList.remove('show')
+        this.searchbar.classList.remove('show')
     }
 }
 
 let closeBtn = document.querySelector('.close');
 new Close(closeBtn);
+
+
+class ToggleMenu {
+    constructor(link) {
+        this.link = link;
+        this.navbar = document.querySelector('.nav-menu');
+        this.link.addEventListener('click', () => this.toggle())
+    }
+
+    toggle() {
+        this.navbar.classList.toggle('show');
+    }
+}
+
+let mobileNav = document.querySelector('.mobile-nav');
+new ToggleMenu(mobileNav);

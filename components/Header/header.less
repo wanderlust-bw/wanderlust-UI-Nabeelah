@@ -14,11 +14,20 @@ header {
         padding: 1rem 2rem;
 
     }
-
+    .mobile-nav {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+        @media(min-width: 600px) {
+            display: none;
+        }
+    }
     .nav-menu {
-        .flex(space-evenly, center, column);
-        margin: 0 1rem;
-        padding: 0;
+        &.show {
+            display: block;
+            .flex(space-evenly, center, column);
+            margin: 0 1rem;
+            padding: 0;
+        }
         @media(min-width: 600px){
             .flex(space-between, center, row);
         }
@@ -31,7 +40,9 @@ header {
                 color: @blue;
             }
         }
+        display: none;
     }
+    
 
 }
 .search-bar {

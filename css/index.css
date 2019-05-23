@@ -182,7 +182,20 @@ header h1 {
   font-weight: bold;
   padding: 1rem 2rem;
 }
+header .mobile-nav {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+@media (min-width: 600px) {
+  header .mobile-nav {
+    display: none;
+  }
+}
 header .nav-menu {
+  display: none;
+}
+header .nav-menu.show {
+  display: block;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
