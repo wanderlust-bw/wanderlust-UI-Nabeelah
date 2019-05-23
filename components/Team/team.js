@@ -21,7 +21,7 @@ class Team {
     animate() {
         let timeline = new TimelineMax();
         this.items.forEach((item) => {
-            timeline.from(item, .5, { opacity: 0 })
+            timeline.from(item, .3, { opacity: 0 })
         })
     }
 }

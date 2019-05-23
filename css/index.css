@@ -694,6 +694,7 @@ header .nav-menu a:hover {
 }
 .team-members .team-card .content .img-side img {
   width: 100%;
+  border-radius: 50%;
 }
 .team-members .team-card .content .back {
   backface-visibility: hidden;
