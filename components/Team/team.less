@@ -12,9 +12,11 @@
 }
 
 .team-members {
-    .flex(center, center, row);
+    .flex(center, center, column);
     width: 100%;
-    
+    @media(min-width: 600px){
+        .flex(center, center, row);
+    }
     .team-card {
         cursor: pointer;
         perspective: 600px;

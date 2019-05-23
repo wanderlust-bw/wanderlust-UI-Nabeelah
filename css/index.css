@@ -166,6 +166,7 @@ header {
   align-items: center;
   color: #1e242e;
   padding: 2rem 0;
+  border-bottom: 1px #1e242e solid;
 }
 @media (min-width: 600px) {
   header {
@@ -634,10 +635,18 @@ header .nav-menu a:hover {
 }
 .team-members {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+@media (min-width: 600px) {
+  .team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .team-members .team-card {
   cursor: pointer;
