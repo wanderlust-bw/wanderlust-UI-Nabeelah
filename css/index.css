@@ -651,14 +651,14 @@ header .nav-menu a:hover {
 .team-members .team-card {
   cursor: pointer;
   perspective: 600px;
-  height: 200px;
+  height: 250px;
   width: 200px;
   position: relative;
   margin: 2rem;
 }
 .team-members .team-card .content {
   position: absolute;
-  height: 100%;
+  height: 80%;
   width: 100%;
   transition: all 1s ease-in-out;
   transform-style: preserve-3d;
@@ -689,4 +689,11 @@ header .nav-menu a:hover {
   padding: 1em;
   display: table-cell;
   vertical-align: middle;
+}
+.team-members .team-card .role {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }

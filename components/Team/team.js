@@ -14,5 +14,3 @@ class Team {
 let teamCards = document.querySelectorAll('.team-card');
 
 new Team(teamCards);
-
-console.log(teamCards);
