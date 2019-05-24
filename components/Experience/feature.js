@@ -55,10 +55,6 @@ class CreateExperience {
     }
 }
 
-let horseTitle = 'Horseback Riding';
-let horseImg = '/assets/horse.jpg';
-let horseDesc = 'Why trek? Explore the beautiful landscape while horseback riding.'
-
 data.forEach(obj => {
     new CreateExperience(obj)
 });
