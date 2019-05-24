@@ -17,7 +17,7 @@ const data = [
     {
         titleCard: 'Sky Diving',
         imgCard: '/assets/sky-diving.jpg',
-        descCard: 'Pump up your andrenalin. Cross an item off your bucketlist and go skydiving!'
+        descCard: 'Cross an item off your bucketlist and go skydiving!'
     } 
 ]
 
